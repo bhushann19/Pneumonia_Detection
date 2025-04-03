@@ -135,7 +135,7 @@ if uploaded_file is not None:
     with col2:
         # Display original image
         img = Image.open(uploaded_file)
-        st.image(img, caption="Uploaded X-ray Image", use_column_width=True)
+        st.image(img, caption="Uploaded X-ray Image", use_container_width=True)
         
         # Preprocess image for prediction
         img_array = preprocess_image(img)
