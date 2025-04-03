@@ -170,7 +170,7 @@ if uploaded_file is not None:
         
         # Display heatmap overlay
         st.subheader("Heatmap Analysis")
-        st.image(heatmap_overlay, caption="Grad-CAM Heatmap (Areas the model focused on)", use_column_width=True)
+        st.image(heatmap_overlay, caption="Grad-CAM Heatmap (Areas the model focused on)", use_container_width=True)
         
         st.info("""
         The heatmap highlights regions of the X-ray that were most influential in the model's prediction.
