@@ -8,6 +8,7 @@ from PIL import Image
 import io
 import matplotlib.pyplot as plt
 import matplotlib
+import time
 import datetime
 import uuid
 import pandas as pd
@@ -279,13 +280,13 @@ with tab1:
                     progress_bar.progress(i)
                     if i < 60:
                         # Simulate preprocessing steps
-                        tf.time.sleep(0.01)  # Short sleeps for responsiveness
+                        time.sleep(0.01)  # Short sleeps for responsiveness
                     elif i < 90:
                         # Simulate model prediction
-                        tf.time.sleep(0.02)
+                        time.sleep(0.01)
                     else:
                         # Simulate post-processing
-                        tf.time.sleep(0.01)
+                        time.sleep(0.01)
                 
                 # Preprocess image for prediction
                 img_array = preprocess_image(img)
