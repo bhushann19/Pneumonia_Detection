@@ -1,5 +1,10 @@
 streamlit
 numpy
+pandas
 tensorflow
 pillow
 matplotlib
+uuid
+python-dateutil
+scikit-image
+opencv-python
